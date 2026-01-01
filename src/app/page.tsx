@@ -79,7 +79,7 @@ export default function Home() {
               </h1>
               <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
                 태국 파타야 & 방콕 지역 레스토랑, 호텔, 급식업체를 위한
-                최고 품질의 신선 식자재를 365일 안정적으로 공급합니다.
+                신선한 채소, 과일, 주방 비품을 365일 안정적으로 공급합니다.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -144,14 +144,14 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">회사 소개</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Fresh Kitchen 365는 태국 현지에서 최고 품질의 식자재를 공급하는 전문 기업입니다.
+              Fresh Kitchen 365는 태국 현지에서 신선한 채소, 과일, 주방 비품을 전문으로 공급하는 기업입니다.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
                 title: '신뢰할 수 있는 품질',
-                description: '엄격한 품질 관리 시스템을 통해 항상 최상의 신선도를 유지합니다. 매일 새벽 시장에서 직접 검수하여 최고 품질만을 선별합니다.',
+                description: '엄격한 품질 관리 시스템을 통해 채소와 과일의 최상의 신선도를 유지합니다. 매일 새벽 시장에서 직접 검수하여 최고 품질만을 선별합니다.',
                 icon: '✅',
               },
               {
@@ -227,16 +227,15 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">취급 제품</h2>
             <p className="text-lg text-green-100 max-w-2xl mx-auto">
-              신선 채소부터 가공식품까지, 주방에 필요한 모든 것을 공급합니다.
+              신선 채소부터 과일, 주방 비품까지 주방에 필요한 모든 것을 공급합니다.
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {[
               { name: '채소류', icon: '🥬', count: '200+' },
               { name: '과일류', icon: '🍎', count: '100+' },
-              { name: '육류', icon: '🥩', count: '80+' },
-              { name: '수산물', icon: '🐟', count: '120+' },
               { name: '가공식품', icon: '🥫', count: '300+' },
+              { name: '주방 비품', icon: '🍽️', count: '150+' },
               { name: '소모품', icon: '📦', count: '200+' },
             ].map((category, idx) => (
               <div key={idx} className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl text-center hover:bg-white/20 transition-colors">
@@ -245,6 +244,77 @@ export default function Home() {
                 <div className="text-green-200 text-sm">{category.count} 품목</div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Meet365 Sister Company Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-3xl p-8 md:p-12 border border-red-100">
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center">
+                    <span className="text-white font-bold text-xl">M</span>
+                  </div>
+                  <span className="text-sm text-red-600 font-semibold bg-red-100 px-3 py-1 rounded-full">
+                    자매회사
+                  </span>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                  고기 주문은<br />
+                  <span className="text-red-600">Meet365</span>에서!
+                </h2>
+                <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                  프리미엄 돼지고기, 소고기, 닭고기가 필요하신가요?<br />
+                  Fresh Kitchen 365의 자매회사 <strong>Meet365</strong>에서
+                  엄선된 최고급 육류를 만나보세요.
+                </p>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-center gap-3 text-gray-700">
+                    <span className="text-2xl">🥩</span>
+                    <span>프리미엄 돼지고기 (삼겹살, 목살, 항정살 등)</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-gray-700">
+                    <span className="text-2xl">🥓</span>
+                    <span>최고급 소고기 (등심, 안심, 갈비 등)</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-gray-700">
+                    <span className="text-2xl">🍗</span>
+                    <span>신선한 닭고기 (닭다리, 닭가슴살 등)</span>
+                  </li>
+                </ul>
+                <a
+                  href="https://www.meet365.net"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-red-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-red-700 transition-colors shadow-lg shadow-red-600/30"
+                >
+                  Meet365 방문하기
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+              <div className="relative">
+                <div className="aspect-square bg-gradient-to-br from-red-400 to-red-600 rounded-3xl shadow-2xl flex items-center justify-center">
+                  <div className="text-center text-white p-8">
+                    <div className="text-8xl mb-4">🥩</div>
+                    <p className="text-2xl font-bold">Premium Meat</p>
+                    <p className="text-red-100 mt-2">365일 신선 배송</p>
+                  </div>
+                </div>
+                <div className="absolute -top-4 -right-4 bg-white p-4 rounded-xl shadow-lg">
+                  <div className="text-2xl font-bold text-red-600">500+</div>
+                  <div className="text-sm text-gray-500">거래처</div>
+                </div>
+                <div className="absolute -bottom-4 -left-4 bg-white p-4 rounded-xl shadow-lg">
+                  <div className="text-2xl font-bold text-red-600">100%</div>
+                  <div className="text-sm text-gray-500">신선도 보장</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -348,7 +418,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
+          <div className="grid md:grid-cols-5 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center">
@@ -358,7 +428,7 @@ export default function Home() {
               </div>
               <p className="text-gray-400 text-sm leading-relaxed">
                 태국 파타야 & 방콕 지역<br />
-                프리미엄 식자재 공급 전문 기업
+                채소, 과일, 주방 비품 전문 유통
               </p>
             </div>
             <div>
@@ -387,6 +457,19 @@ export default function Home() {
                   </a>
                 </li>
                 <li><a href="#contact" className="hover:text-white transition-colors">고객 문의</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-bold mb-4">자매회사</h4>
+              <ul className="space-y-2 text-gray-400 text-sm">
+                <li>
+                  <a href="https://www.meet365.net" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-1">
+                    Meet365 - 프리미엄 육류
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

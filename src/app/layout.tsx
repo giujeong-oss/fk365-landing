@@ -13,12 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Fresh Kitchen 365 | 프리미엄 식자재 공급",
-  description: "태국 파타야 & 방콕 지역 프리미엄 식자재 공급 전문 기업. 신선한 채소, 과일, 육류를 365일 안정적으로 공급합니다.",
-  keywords: ["식자재", "Fresh Kitchen", "파타야", "방콕", "태국", "식자재 공급", "B2B"],
+  title: "Fresh Kitchen 365 | 채소, 과일, 주방 비품 전문 유통",
+  description: "태국 파타야 & 방콕 지역 채소, 과일, 주방 비품 전문 유통 기업. 신선한 농산물과 주방용품을 365일 안정적으로 공급합니다. 고기 주문은 자매회사 Meet365에서!",
+  keywords: ["채소", "과일", "주방 비품", "Fresh Kitchen", "파타야", "방콕", "태국", "식자재 공급", "B2B", "Meet365"],
   openGraph: {
-    title: "Fresh Kitchen 365 | 프리미엄 식자재 공급",
-    description: "태국 파타야 & 방콕 지역 프리미엄 식자재 공급 전문 기업",
+    title: "Fresh Kitchen 365 | 채소, 과일, 주방 비품 전문 유통",
+    description: "태국 파타야 & 방콕 지역 채소, 과일, 주방 비품 전문 유통 기업. 고기 주문은 자매회사 Meet365에서!",
     url: "https://freshkitchen365.com",
     siteName: "Fresh Kitchen 365",
     locale: "ko_KR",
